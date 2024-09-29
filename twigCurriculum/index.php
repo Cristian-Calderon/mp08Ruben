@@ -1,10 +1,9 @@
 <?php
 // Cargar el autoloader de Composer
-
 use function PHPSTORM_META\map;
+require_once  './vendor/autoload.php';
 
-require_once __DIR__ . '/vendor/autoload.php';
-
+// require_once __DIR__ . '/vendor/autoload.php';
 // Inicializar Twig
 $loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Environment($loader);
